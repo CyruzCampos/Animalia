@@ -12,3 +12,8 @@ int Animal::Age(int curYear)
 	//curYear - birthYear == age
 	return curYear - birthYear;
 }
+
+int Human::think()
+{
+	cout << "Human is thinking about..." << endl;
+}

@@ -50,7 +50,8 @@ private:
 	int sex;
 public:
 	Human(Sex s, int year) : Animal(s,year), hair(NORMAL) { }
-	Human(Sex s, int year) : Animal(s, year), hair(h) { }
+	Human(Sex s, int year, HairType h) : Animal(s, year), hair(h) { }
+	int think();
 };
 
 #endif
