@@ -39,6 +39,18 @@ public:
 	Mammal(Sex s, int year) : Animal(s,year), hair(NORMAL) { } // Default hairtype is normal
 	Mammal(Sex s, int year, HairType h) : Animal(s,year), hair(h) { } // Otherwise, let them set the hairtype
 	int Speek();
+
+};
+
+class Human : public Animal
+{
+private:
+	int hairColor;
+	int eyeColor;
+	int sex;
+public:
+	Human(Sex s, int year) : Animal(s,year), hair(NORMAL) { }
+	Human(Sex s, int year) : Animal(s, year), hair(h) { }
 };
 
 #endif
